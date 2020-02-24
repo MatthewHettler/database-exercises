@@ -114,4 +114,4 @@ SELECT COUNT(*) AS 'Number of students that have taken'
 FROM (
   SELECT DISTINCT users_id
   FROM Results
-  JOIN quizzes AS q ON q.id = Results.quizzes_id AND q.id = 5);
+  JOIN quizzes AS q ON q.id = Results.quizzes_id AND q.id = 5) AS t1;
